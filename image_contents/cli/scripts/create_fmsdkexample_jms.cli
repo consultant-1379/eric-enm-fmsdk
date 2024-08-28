@@ -1,0 +1,38 @@
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredEventBasedMediationClient:add(entries=[queue/MediationClientConsumerQueue-amq java:jboss/exported/jms/queue/MediationClientConsumerQueue-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationFailureResponseResultHandler:add(entries=[queue/MediationFailureResponseQueue-amq java:jboss/exported/jms/queue/MediationFailureResponseQueue-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredFMMediationChannel:add(entries=[queue/fmalarmqueue-amq java:jboss/exported/jms/queue/fmalarmqueue-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationResponseResultHandler:add(entries=[queue/MediationResponseQueue-amq java:jboss/exported/jms/queue/MediationResponseQueue-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationServiceConsumer:add(entries=[queue/MediationServiceConsumerQueue-amq java:jboss/exported/jms/queue/MediationServiceConsumerQueue-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationServiceConsumerFMSNMP0:add(entries=[queue/FmSnmpMediationServiceConsumer_0-amq java:jboss/exported/jms/queue/FmSnmpMediationServiceConsumer_0-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationServiceConsumerFMSNMP1:add(entries=[queue/FmSnmpMediationServiceConsumer_1-amq java:jboss/exported/jms/queue/FmSnmpMediationServiceConsumer_1-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationServiceConsumerFMSNMP2:add(entries=[queue/FmSnmpMediationServiceConsumer_2-amq java:jboss/exported/jms/queue/FmSnmpMediationServiceConsumer_2-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=ClusteredMediationServiceConsumerFMSNMP3:add(entries=[queue/FmSnmpMediationServiceConsumer_3-amq java:jboss/exported/jms/queue/FmSnmpMediationServiceConsumer_3-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=NetworkElementSNMPFmNotifications_2:add(entries=[queue/NetworkElementSNMPFmNotifications_2-amq java:jboss/exported/jms/queue/NetworkElementSNMPFmNotifications_2-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=NetworkElementSNMPFmNotifications_3:add(entries=[queue/NetworkElementSNMPFmNotifications_3-amq java:jboss/exported/jms/queue/NetworkElementSNMPFmNotifications_3-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-queue=AlarmSupervisionResponseChannel:add(entries=[queue/alarmsupervisionresponsequeue-amq java:jboss/exported/jms/queue/alarmsupervisionresponsequeue-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-topic=Clustered-dps-notification-event:add(entries=[topic/dps-notification-event-amq java:jboss/exported/jms/topic/dps-notification-event-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-topic=ClusteredFMHandoverTopic:add(entries=[topic/handovertopic-amq java:jboss/exported/jms/topic/handovertopic-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-topic=ClusteredMediationTaskErrorHandler:add(entries=[topic/MediationTaskErrorTopic-amq java:jboss/exported/jms/topic/MediationTaskErrorTopic-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/jms-topic=modelDeploymentEvents:add(entries=[topic/modelDeploymentEvents-amq java:jboss/exported/jms/topic/modelDeploymentEvents-amq])
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/pooled-connection-factory=activemq-ra:write-attribute(name=min-pool-size,value=10)
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/pooled-connection-factory=activemq-ra:write-attribute(name=max-pool-size,value=100)
+end-if
+if (outcome == success) of /subsystem=messaging-activemq/server=default/pooled-connection-factory=activemq-ra:write-attribute(name=consumer-window-size, value=0)
+end-if

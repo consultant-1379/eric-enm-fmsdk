@@ -1,0 +1,12 @@
+if (outcome == success) of  /subsystem=jca/workmanager=default/short-running-threads=default:write-attribute(name=core-threads, value=500)
+end-if
+if (outcome == success) of  /subsystem=jca/workmanager=default/short-running-threads=default:write-attribute(name=queue-length, value=7250)
+end-if
+if (outcome == success) of  /subsystem=jca/workmanager=default/short-running-threads=default:write-attribute(name=max-threads, value=7250)
+end-if
+if (outcome == success) of  /subsystem=jca/workmanager=default/long-running-threads=default:write-attribute(name=core-threads, value=500)
+end-if
+if (outcome == success) of  /subsystem=jca/workmanager=default/long-running-threads=default:write-attribute(name=queue-length, value=7250)
+end-if
+if (outcome == success) of  /subsystem=jca/workmanager=default/long-running-threads=default:write-attribute(name=max-threads, value=7250)
+end-if

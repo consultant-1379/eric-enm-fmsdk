@@ -1,0 +1,2 @@
+if (outcome == success) of  /subsystem=logging/logger=com.ericsson.oss.mediation.adapter.connector.adventnet:add(level=WARN)
+end-if

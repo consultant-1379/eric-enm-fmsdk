@@ -1,0 +1,7 @@
+# Insert global modules
+if (outcome == success) of  /subsystem=ee:list-add(name="global-modules",value={"name" => "org.apache.camel","annotations" => "true"})
+end-if
+if (outcome == success) of  /subsystem=ee:list-add(name="global-modules",value={"name" => "com.ericsson.oss.itpf.security.cryptography.api","services" => "true"})
+end-if
+if (outcome == success) of  /subsystem=ee:list-add(name="global-modules",value={"name" => "com.ericsson.oss.itpf.security.cryptography.impl","services" => "true"})
+end-if

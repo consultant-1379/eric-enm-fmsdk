@@ -1,0 +1,10 @@
+if (outcome == success) of /subsystem=ejb3/strict-max-bean-instance-pool=mdb-trap-max-pool:add(max-pool-size=1,timeout-unit=MINUTES, timeout=5)
+end-if
+if (outcome == success) of /subsystem=ejb3/strict-max-bean-instance-pool=slsb-strict-max-pool:write-attribute(name=max-pool-size, value=256)
+end-if
+if (outcome == success) of /subsystem=ejb3/strict-max-bean-instance-pool=mdb-strict-max-pool:write-attribute(name=max-pool-size, value=64)
+end-if
+if (outcome == success) of /subsystem=ejb3/thread-pool=default:write-attribute(name=max-threads, value=256)
+end-if
+if (outcome == success) of /subsystem=ejb3/thread-pool=async:write-attribute(name=max-threads, value=100)
+end-if
